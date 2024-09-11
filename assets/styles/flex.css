@@ -1,0 +1,19 @@
+body{
+    max-width: 100%;
+    --padding: 1em;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+div .item{
+    border: 1px solid #000;
+    padding: var(--padding);
+}
+
+.item{
+    width: calc((100%/3) - 10px - 2*var(--padding));
+}
